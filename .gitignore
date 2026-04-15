@@ -1,0 +1,5 @@
+.env          # ← главное! токен не попадёт в репо
+.idea/
+__pycache__/
+venv/
+downloads/

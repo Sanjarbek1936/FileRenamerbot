@@ -2,8 +2,11 @@ import asyncio
 import os
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, FSInputFile
+from dotenv import load_dotenv
 
-BOT_TOKEN = "8544927235:AAFS6EKwdDF2hBn-ayxzq3-3j_MVBqFkGak"
+load_dotenv()  # загружает .env
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # берём из окружения
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
